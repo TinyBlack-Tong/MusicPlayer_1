@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".songs_dan">
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/r_1"
+        android:layout_width="match_parent"
+        android:layout_height="272dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/black">
+
+        <Button
+            android:id="@+id/go_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="返回" />
+        <TextView
+            android:id="@+id/go_songs"
+            android:layout_toRightOf="@+id/go_back"
+            android:layout_marginLeft="260dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:text="播放歌曲"
+            />
+
+        <TextView
+            android:id="@+id/song_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="我的最爱"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="82dp"
+            tools:layout_editor_absoluteY="2dp" />
+        <TextView
+            android:id="@+id/split_1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/go_back"
+            android:background="#0E0D0D" />
+
+
+        <ImageView
+            android:id="@+id/pic_cd"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/split_1"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="-6dp"
+            android:layout_marginLeft="-6dp"
+            android:layout_marginTop="49dp"
+            android:padding="10sp"
+            android:src="@drawable/panni" />
+
+        <TextView
+            android:id="@+id/test_intent"
+            android:layout_below="@+id/split_1"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_toRightOf="@id/pic_cd"
+
+
+            />
+
+        <Button
+            android:id="@+id/test_sql"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测试一下"/>
+
+
+
+
+        <TextView
+            android:id="@+id/split_2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/pic_cd"
+            android:layout_marginBottom="69dp"
+            android:background="#0E0D0D" />
+
+
+    </RelativeLayout>
+
+
+<!--    <RelativeLayout-->
+<!--        android:layout_below="@+id/r_1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content">-->
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/test_int"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"/>-->
+<!--    </RelativeLayout>-->
+
+<ListView
+    android:id="@android:id/list"
+    android:layout_marginTop="300dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+</ListView>
+
+</RelativeLayout>
